@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ДЗ Асеева</title>
+</head>
+<body>
+    <legend>
+    	<p><i>Пожалуйста, заполните форму. Обязательные поля помечены *</i></p>
+	</legend>
+	<form>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<div>
+   					<p>Имя *: <input name="login"></p>
+   					<p>Телефон *:  <input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}"></p>
+   					<p>Email *: <input name="email"></p>
+			</div>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Персональная информация</legend>
+				<div>
+					<p>Возраст *: <input type="age"></p>
+				</div>
+				<div>
+				<p> Пол <select name="select" size="1">
+   					<option selected value="s1">Женщина</option>
+   					<option value="s2">Мужчина</option>
+   					</select></p>
+   				</div>
+   				<div>
+                <label for="textareaField">Перечислите личные качества</label>
+                <textarea id="textareaField"></textarea>
+            </div>
+			</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Выберите ваших любимых животных</legend>
+				<input type="checkbox" name="an1" value="zebra">Зебра                 
+  				<input type="checkbox" name="an2" value="cat">Кошка                                            
+  				<input type="checkbox" name="an3" value="anaconda">Анаконда                                          
+  				<input type="checkbox" name="an4" value="man">Человек
+  				<input type="checkbox" name="an5" value="elefant">Слон
+  				<input type="checkbox" name="an6" value="antelope">Антилопа
+  				<input type="checkbox" name="an7" value="pigeon">Голубь
+  				<input type="checkbox" name="an8" value="crab">Краб
+		</fieldset>
+	</form>
+	 <p><input type="submit" name="submit" value="Отправить информацию"></p>
+</body>
+</html>
